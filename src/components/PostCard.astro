@@ -8,7 +8,7 @@ interface Props {
 }
 
 const { post, fallbackImage } = Astro.props;
-const image = post.data.image ?? fallbackImage;
+const image = post.data.image || fallbackImage;
 ---
 <a class="card card-wide" href={`/blog/${post.id}/`}>
   {image && <img src={image} alt="" loading="lazy" width="600" height="450" />}

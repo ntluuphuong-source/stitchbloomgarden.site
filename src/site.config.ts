@@ -1,12 +1,12 @@
-// Everything you are likely to change about the site lives here.
+// Values people edit live in src/data/settings.json (editable in Pages CMS under "Site settings").
+import settings from './data/settings.json';
 
 export const SITE = {
   name: 'StitchBloomGarden',
   domain: 'stitchbloomgarden.site',
-  tagline: 'Funny, cozy and a little bit spooky cross stitch patterns',
-  description:
-    'Free cross stitch patterns, stitching tips and modern PDF patterns from StitchBloomGarden: sassy cats, cozy seasons, faith and nature designs.',
-  email: '', // e.g. 'hello@stitchbloomgarden.site' (shown in the footer when set)
+  tagline: settings.tagline,
+  description: settings.description,
+  email: settings.email,
 };
 
 // Tag on every Etsy link so visits from this site show up in Etsy Stats.
@@ -16,34 +16,23 @@ export const SHOPS = {
   StitchBloomGarden: {
     name: 'StitchBloomGarden',
     url: 'https://www.etsy.com/shop/StitchBloomGarden',
-    blurb: 'Sassy black cats, funny quotes, faith and cozy nature patterns.',
+    blurb: settings.stitchBloomGardenBlurb,
   },
   NyNaCrossStitch: {
     name: 'NyNaCrossStitch',
     url: 'https://www.etsy.com/shop/NyNaCrossStitch',
-    blurb: 'Spooky-cute Halloween, Christmas samplers and woodland friends.',
+    blurb: settings.nynaBlurb,
   },
 } as const;
 
-// Listing ids shown under "Stitchers' favorites" on the home page.
-export const FEATURED_IDS = [
-  '4544984469', // Funny Black Cat Peeking
-  '4557483906', // Five Coffees Later
-  '4553655771', // Funny Orange Hugging Grey Cat
-  '4531398514', // The Lord is My Shepherd
-  '4565464081', // I Will Succeed Because I Am Insane
-  '4488842677', // Coffee Diver
-  '4579004984', // Red Truck Christmas Tree
-  '4510600528', // Are You Pooping
-];
+// Etsy links (or listing ids) shown under "Stitchers' favorites" on the home page.
+export const FEATURED = settings.featured;
 
-// Email signup. Paste the form action URL from Kit or MailerLite here to turn the form on.
-// Kit: Grow > Landing Pages & Forms > your form > Publish > HTML, copy the <form action="..."> URL.
-// MailerLite: Forms > Embedded forms > your form > HTML code, copy the <form action="..."> URL.
-// The form posts a field named "email_address" (Kit) or "fields[email]" (MailerLite); set NEWSLETTER.field to match.
+// Email signup: the <form action="..."> URL from Kit or MailerLite. Empty shows a "Follow the shop" button instead.
+// The email field is named "email_address" on Kit and "fields[email]" on MailerLite.
 export const NEWSLETTER = {
-  action: '',
-  field: 'email_address',
+  action: settings.newsletterAction,
+  field: settings.newsletterField || 'email_address',
 };
 
 export function etsyLink(url: string): string {

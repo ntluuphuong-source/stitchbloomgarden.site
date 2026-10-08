@@ -1,0 +1,182 @@
+# Pages CMS configuration (https://app.pagescms.org). Defines what can be edited in the visual editor.
+
+media:
+  - name: images
+    label: Images
+    input: public/images
+    output: /images
+    categories: [image]
+  - name: pdfs
+    label: Pattern PDFs
+    input: public/patterns
+    output: /patterns
+    extensions: [pdf]
+
+content:
+  - name: freebies
+    label: Free patterns
+    type: collection
+    path: src/content/freebies
+    filename: "{primary}.md"
+    exclude: [.gitkeep]
+    view:
+      fields: [title, date, draft]
+      primary: title
+      sort: [date, title]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Pattern name
+        type: string
+        required: true
+        description: Also becomes the page address, e.g. "Little Ghost" -> stitchbloomgarden.site/free-patterns/little-ghost/
+      - name: description
+        label: Short description
+        type: text
+        required: true
+        description: One or two sentences. Shown under the title and in Google results.
+      - name: date
+        label: Date
+        type: date
+        options:
+          format: yyyy-MM-dd
+      - name: image
+        label: Preview image
+        type: image
+        required: true
+        description: Square photo or mockup, about 1200 x 1200.
+        options:
+          media: images
+          path: public/images/freebies
+      - name: pdf
+        label: Pattern PDF
+        type: file
+        required: true
+        options:
+          media: pdfs
+      - name: size
+        label: Size
+        type: string
+        description: e.g. 40 x 40 stitches
+      - name: colors
+        label: Number of DMC colors
+        type: number
+      - name: level
+        label: Level
+        type: select
+        options:
+          values: [Beginner, Easy, Intermediate]
+      - name: emailOnly
+        label: Send by email only
+        type: boolean
+        description: When on, visitors must sign up to the email list to get this PDF (only works once the email form is set up in Site settings).
+      - name: related
+        label: Related Etsy patterns
+        type: string
+        list: true
+        description: Paste Etsy listing links. They are shown as "You might also like" under the free pattern.
+      - name: draft
+        label: Hide (draft)
+        type: boolean
+        description: Turn on to keep this pattern off the site while you work on it.
+      - name: body
+        label: More about this pattern
+        type: rich-text
+        options:
+          format: markdown
+          media: images
+          path: public/images/freebies
+
+  - name: blog
+    label: Blog posts
+    type: collection
+    path: src/content/blog
+    filename: "{primary}.md"
+    exclude: [.gitkeep]
+    view:
+      fields: [title, date, draft]
+      primary: title
+      sort: [date, title]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+        description: Also becomes the page address.
+      - name: description
+        label: Short description
+        type: text
+        required: true
+        description: One or two sentences. Shown on the blog list and in Google results.
+      - name: date
+        label: Date
+        type: date
+        options:
+          format: yyyy-MM-dd
+      - name: image
+        label: Cover image (optional)
+        type: image
+        description: Leave empty to use the photo of the first pattern below.
+        options:
+          media: images
+          path: public/images/blog
+      - name: patterns
+        label: Etsy patterns to show under the post
+        type: string
+        list: true
+        description: Paste Etsy listing links.
+      - name: draft
+        label: Hide (draft)
+        type: boolean
+      - name: body
+        label: Article
+        type: rich-text
+        options:
+          format: markdown
+          media: images
+          path: public/images/blog
+
+  - name: settings
+    label: Site settings
+    type: file
+    path: src/data/settings.json
+    format: json
+    fields:
+      - name: tagline
+        label: Tagline
+        type: string
+      - name: description
+        label: Site description (for Google)
+        type: text
+      - name: email
+        label: Contact email (shown in the footer)
+        type: string
+      - name: featured
+        label: Featured patterns on the home page
+        type: string
+        list: true
+        description: Paste Etsy listing links. 8 works best.
+      - name: newsletterAction
+        label: Email form address (Kit or MailerLite)
+        type: string
+        description: The form's action URL. Leave empty to show a "Follow the shop on Etsy" button instead.
+      - name: newsletterField
+        label: Email field name
+        type: select
+        options:
+          values:
+            - name: email_address
+              label: Kit (email_address)
+            - name: fields[email]
+              label: MailerLite (fields[email])
+      - name: stitchBloomGardenBlurb
+        label: StitchBloomGarden shop description
+        type: text
+      - name: nynaBlurb
+        label: NyNaCrossStitch shop description
+        type: text

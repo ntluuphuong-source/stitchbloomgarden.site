@@ -4,11 +4,11 @@ import ListingCard from '../components/ListingCard.astro';
 import FreebieCard from '../components/FreebieCard.astro';
 import PostCard from '../components/PostCard.astro';
 import Signup from '../components/Signup.astro';
-import { SITE, SHOPS, FEATURED_IDS, etsyLink } from '../site.config';
+import { SHOPS, FEATURED, etsyLink } from '../site.config';
 import { getListings } from '../data/listings';
 import { getPosts, getFreebies } from '../utils';
 
-const featured = getListings(FEATURED_IDS);
+const featured = getListings(FEATURED);
 const collage = featured.slice(0, 6);
 const freebies = (await getFreebies()).slice(0, 4);
 const posts = (await getPosts()).slice(0, 3);

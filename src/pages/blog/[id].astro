@@ -16,7 +16,7 @@ const { title, description, date, image, patterns } = post.data;
 const { Content } = await render(post);
 const listings = getListings(patterns);
 ---
-<Base title={title} description={description} image={image ?? listings[0]?.image} type="article">
+<Base title={title} description={description} image={image || listings[0]?.image} type="article">
   <article class="wrap">
     <header class="article-head article">
       <div class="eyebrow">Blog</div>

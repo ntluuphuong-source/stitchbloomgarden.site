@@ -7,6 +7,11 @@ export const categories = data.categories;
 
 const byId = new Map(listings.map((l) => [l.id, l]));
 
-export function getListings(ids: string[]): Listing[] {
-  return ids.map((id) => byId.get(id)).filter((l): l is Listing => Boolean(l));
+// Accepts listing ids ("4544984469") or Etsy links ("https://www.etsy.com/listing/4544984469/black-cat...").
+export function listingId(ref: string): string {
+  return ref.match(/listing\/(\d+)/)?.[1] ?? ref.trim();
+}
+
+export function getListings(refs: string[]): Listing[] {
+  return refs.map((ref) => byId.get(listingId(ref))).filter((l): l is Listing => Boolean(l));
 }

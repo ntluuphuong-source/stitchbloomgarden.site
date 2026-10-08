@@ -7,10 +7,10 @@ const blog = defineCollection({
     title: z.string(),
     description: z.string(),
     date: z.coerce.date(),
-    image: z.string().optional(),
-    // Etsy listing ids to show as "Patterns from this post" under the article.
-    patterns: z.array(z.string()).default([]),
-    draft: z.boolean().default(false),
+    image: z.string().nullish(),
+    // Etsy links or listing ids to show as "Patterns from this post" under the article.
+    patterns: z.array(z.string()).nullish().transform((v) => v ?? []),
+    draft: z.boolean().nullish().transform((v) => v ?? false),
   }),
 });
 
@@ -22,14 +22,14 @@ const freebies = defineCollection({
     date: z.coerce.date(),
     image: z.string(), // e.g. /images/freebies/little-ghost.jpg
     pdf: z.string(), // e.g. /patterns/little-ghost.pdf
-    size: z.string().optional(), // e.g. "40 x 40 stitches"
-    colors: z.number().optional(), // number of DMC colors
-    level: z.enum(['Beginner', 'Easy', 'Intermediate']).default('Beginner'),
+    size: z.string().nullish(), // e.g. "40 x 40 stitches"
+    colors: z.number().nullish(), // number of DMC colors
+    level: z.enum(['Beginner', 'Easy', 'Intermediate']).nullish().transform((v) => v ?? 'Beginner'),
     // When true the PDF is only sent by email; the page shows the signup form instead of a download button.
-    emailOnly: z.boolean().default(false),
-    // Etsy listing ids to suggest next to the freebie.
-    related: z.array(z.string()).default([]),
-    draft: z.boolean().default(false),
+    emailOnly: z.boolean().nullish().transform((v) => v ?? false),
+    // Etsy links or listing ids to suggest next to the freebie.
+    related: z.array(z.string()).nullish().transform((v) => v ?? []),
+    draft: z.boolean().nullish().transform((v) => v ?? false),
   }),
 });
 

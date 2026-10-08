@@ -26,7 +26,7 @@ const gated = emailOnly && Boolean(NEWSLETTER.action);
         <h1 style="margin-top: 12px;">{title}</h1>
         <p class="lead">{description}</p>
         <div class="facts">
-          <div class="fact"><b>{size ?? '-'}</b><span>Size</span></div>
+          <div class="fact"><b>{size || '-'}</b><span>Size</span></div>
           <div class="fact"><b>{colors ?? '-'}</b><span>DMC colors</span></div>
           <div class="fact"><b>{level}</b><span>Level</span></div>
         </div>
