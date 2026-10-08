@@ -1,0 +1,45 @@
+---
+import Base from '../../layouts/Base.astro';
+import ListingCard from '../../components/ListingCard.astro';
+import { SHOPS, etsyLink } from '../../site.config';
+import { listings, categories } from '../../data/listings';
+---
+<Base title="Cross Stitch Patterns" description="Browse all StitchBloomGarden and NyNaCrossStitch cross stitch patterns. Instant PDF download on Etsy.">
+  <section class="section">
+    <div class="wrap">
+      <div class="eyebrow">Instant PDF download on Etsy</div>
+      <h1>All patterns</h1>
+      <p class="lead">
+        {listings.length} patterns from our two shops,
+        <a href={etsyLink(SHOPS.StitchBloomGarden.url)} target="_blank" rel="noopener">StitchBloomGarden</a> and
+        <a href={etsyLink(SHOPS.NyNaCrossStitch.url)} target="_blank" rel="noopener">NyNaCrossStitch</a>.
+        Tap a pattern to see it on Etsy.
+      </p>
+      <div class="pills" role="group" aria-label="Filter by theme" style="margin-top: 28px;">
+        <button class="pill" type="button" data-filter="all" aria-pressed="true">All</button>
+        {categories.map((c) => <button class="pill" type="button" data-filter={c.key} aria-pressed="false">{c.label}</button>)}
+      </div>
+      <div class="grid" id="listings">
+        {listings.map((l) => <ListingCard listing={l} showShop />)}
+      </div>
+    </div>
+  </section>
+</Base>
+
+<script>
+  const pills = document.querySelectorAll<HTMLButtonElement>('.pill');
+  const cards = document.querySelectorAll<HTMLElement>('#listings .card');
+  function apply(filter: string) {
+    pills.forEach((p) => p.setAttribute('aria-pressed', String(p.dataset.filter === filter)));
+    cards.forEach((c) => (c.hidden = filter !== 'all' && c.dataset.category !== filter));
+  }
+  pills.forEach((p) =>
+    p.addEventListener('click', () => {
+      const filter = p.dataset.filter ?? 'all';
+      apply(filter);
+      history.replaceState(null, '', filter === 'all' ? location.pathname : `#${filter}`);
+    }),
+  );
+  const initial = location.hash.slice(1);
+  if (initial && [...pills].some((p) => p.dataset.filter === initial)) apply(initial);
+</script>

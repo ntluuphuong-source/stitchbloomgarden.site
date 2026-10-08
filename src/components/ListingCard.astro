@@ -1,0 +1,19 @@
+---
+import { etsyLink } from '../site.config';
+import type { Listing } from '../data/listings';
+
+interface Props {
+  listing: Listing;
+  showShop?: boolean;
+}
+
+const { listing, showShop = false } = Astro.props;
+---
+<a class="card" href={etsyLink(listing.url)} target="_blank" rel="noopener" data-category={listing.category} data-shop={listing.shop}>
+  <img src={listing.image} alt={listing.title} loading="lazy" width="570" height="570" />
+  <div class="card-body">
+    <span class="card-title">{listing.name}</span>
+    {showShop && <span class="card-meta">{listing.shop}</span>}
+    <span class="card-cta">View on Etsy →</span>
+  </div>
+</a>

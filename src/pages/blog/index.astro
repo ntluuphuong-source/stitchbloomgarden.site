@@ -1,0 +1,22 @@
+---
+import Base from '../../layouts/Base.astro';
+import PostCard from '../../components/PostCard.astro';
+import Signup from '../../components/Signup.astro';
+import { getListings } from '../../data/listings';
+import { getPosts } from '../../utils';
+
+const posts = await getPosts();
+---
+<Base title="Cross Stitch Blog" description="Cross stitch tips, tutorials and pattern ideas from StitchBloomGarden.">
+  <section class="section">
+    <div class="wrap">
+      <div class="eyebrow">Tips & tutorials</div>
+      <h1>The stitching blog</h1>
+      <p class="lead">Beginner guides, fabric and thread know-how, and pattern ideas for every season.</p>
+      <div class="grid grid-wide" style="margin-top: 32px;">
+        {posts.map((p) => <PostCard post={p} fallbackImage={getListings(p.data.patterns)[0]?.image} />)}
+      </div>
+    </div>
+  </section>
+  <section class="section"><div class="wrap"><Signup /></div></section>
+</Base>

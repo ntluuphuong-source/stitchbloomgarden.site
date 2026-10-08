@@ -1,0 +1,19 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  freebie: CollectionEntry<'freebies'>;
+}
+
+const { freebie } = Astro.props;
+const { title, image, level, size } = freebie.data;
+---
+<a class="card" href={`/free-patterns/${freebie.id}/`}>
+  <img src={image} alt={`${title} free cross stitch pattern`} loading="lazy" width="600" height="600" />
+  <div class="card-body">
+    <span><span class="badge">Free</span> <span class="badge badge-berry">{level}</span></span>
+    <span class="card-title">{title}</span>
+    {size && <span class="card-meta">{size}</span>}
+    <span class="card-cta">Get the free PDF →</span>
+  </div>
+</a>

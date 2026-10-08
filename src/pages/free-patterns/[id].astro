@@ -1,0 +1,60 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import ListingCard from '../../components/ListingCard.astro';
+import Signup from '../../components/Signup.astro';
+import { NEWSLETTER, SHOPS, etsyLink } from '../../site.config';
+import { getListings } from '../../data/listings';
+
+export async function getStaticPaths() {
+  const freebies = await getCollection('freebies', ({ data }) => !data.draft);
+  return freebies.map((freebie) => ({ params: { id: freebie.id }, props: { freebie } }));
+}
+
+const { freebie } = Astro.props;
+const { title, description, image, pdf, size, colors, level, emailOnly, related } = freebie.data;
+const { Content } = await render(freebie);
+const relatedListings = getListings(related);
+const gated = emailOnly && Boolean(NEWSLETTER.action);
+---
+<Base title={`${title} Free Cross Stitch Pattern`} description={description} image={image} type="article">
+  <div class="wrap">
+    <div class="freebie">
+      <img src={image} alt={`${title} free cross stitch pattern`} width="600" height="600" />
+      <div>
+        <span class="badge">Free pattern</span>
+        <h1 style="margin-top: 12px;">{title}</h1>
+        <p class="lead">{description}</p>
+        <div class="facts">
+          <div class="fact"><b>{size ?? '-'}</b><span>Size</span></div>
+          <div class="fact"><b>{colors ?? '-'}</b><span>DMC colors</span></div>
+          <div class="fact"><b>{level}</b><span>Level</span></div>
+        </div>
+        {gated ? (
+          <a class="btn btn-primary" href="#signup">Get it by email</a>
+        ) : (
+          <a class="btn btn-primary" href={pdf} download>Download the free PDF</a>
+        )}
+        <p class="card-meta" style="margin-top: 14px;">
+          Like this one? There are hundreds more in our <a href={etsyLink(SHOPS.StitchBloomGarden.url)} target="_blank" rel="noopener">Etsy shop</a>.
+        </p>
+        <div class="prose"><Content /></div>
+      </div>
+    </div>
+  </div>
+
+  {relatedListings.length > 0 && (
+    <section class="section" style="padding-top: 16px;">
+      <div class="wrap">
+        <div class="section-head"><h2>You might also like</h2></div>
+        <div class="grid">{relatedListings.map((l) => <ListingCard listing={l} />)}</div>
+      </div>
+    </section>
+  )}
+
+  <section class="section">
+    <div class="wrap">
+      <Signup title={gated ? `Get "${title}" in your inbox` : undefined} />
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,40 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import ListingCard from '../../components/ListingCard.astro';
+import Signup from '../../components/Signup.astro';
+import { getListings } from '../../data/listings';
+import { formatDate } from '../../utils';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', ({ data }) => !data.draft);
+  return posts.map((post) => ({ params: { id: post.id }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { title, description, date, image, patterns } = post.data;
+const { Content } = await render(post);
+const listings = getListings(patterns);
+---
+<Base title={title} description={description} image={image ?? listings[0]?.image} type="article">
+  <article class="wrap">
+    <header class="article-head article">
+      <div class="eyebrow">Blog</div>
+      <h1>{title}</h1>
+      <div class="card-meta">{formatDate(date)}</div>
+    </header>
+    {image && <img class="article-cover" src={image} alt="" width="900" height="500" />}
+    <div class="article prose"><Content /></div>
+  </article>
+
+  {listings.length > 0 && (
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head"><h2>Patterns from this post</h2></div>
+        <div class="grid">{listings.map((l) => <ListingCard listing={l} />)}</div>
+      </div>
+    </section>
+  )}
+
+  <section class="section"><div class="wrap"><Signup /></div></section>
+</Base>

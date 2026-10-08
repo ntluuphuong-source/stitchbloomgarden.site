@@ -1,0 +1,28 @@
+---
+import Base from '../../layouts/Base.astro';
+import FreebieCard from '../../components/FreebieCard.astro';
+import Signup from '../../components/Signup.astro';
+import { getFreebies } from '../../utils';
+
+const freebies = await getFreebies();
+---
+<Base title="Free Cross Stitch Patterns" description="Free cross stitch patterns to download as PDF: cute, funny and seasonal designs for beginners and beyond.">
+  <section class="section">
+    <div class="wrap">
+      <div class="eyebrow">Free PDF downloads</div>
+      <h1>Free cross stitch patterns</h1>
+      <p class="lead">Small, quick-to-stitch designs you can download for free. Each PDF has a color chart, a symbol chart and the DMC thread list.</p>
+      <div style="margin-top: 32px;">
+        {freebies.length ? (
+          <div class="grid">{freebies.map((f) => <FreebieCard freebie={f} />)}</div>
+        ) : (
+          <div class="empty">
+            <h3>The first free patterns are on the way</h3>
+            <p>Sign up below and we'll send them to you as soon as they're ready.</p>
+          </div>
+        )}
+      </div>
+    </div>
+  </section>
+  <section class="section"><div class="wrap"><Signup /></div></section>
+</Base>

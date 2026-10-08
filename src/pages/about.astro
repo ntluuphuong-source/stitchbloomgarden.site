@@ -1,0 +1,35 @@
+---
+import Base from '../layouts/Base.astro';
+import Signup from '../components/Signup.astro';
+import { SHOPS, etsyLink } from '../site.config';
+---
+<Base title="About" description="About StitchBloomGarden, a small studio making modern, funny and cozy cross stitch patterns.">
+  <article class="wrap">
+    <header class="article-head article">
+      <div class="eyebrow">About us</div>
+      <h1>Hi, we're StitchBloomGarden</h1>
+    </header>
+    <div class="article prose">
+      <p>
+        We're a small pattern studio that designs cross stitch charts we'd want to hang on our own walls: sassy black
+        cats, geese with opinions, cozy autumn evenings, faith quotes and calm little landscapes.
+      </p>
+      <p>
+        Every pattern is designed stitch by stitch and tested for clear symbols and sensible colors. Our PDFs come with
+        a color chart, a black-and-white symbol chart, a Pattern Keeper-ready file and the full DMC thread list, so you
+        can stitch from paper or a tablet.
+      </p>
+      <h2>Where to find our patterns</h2>
+      <ul>
+        {Object.values(SHOPS).map((shop) => (
+          <li><a href={etsyLink(shop.url)} target="_blank" rel="noopener">{shop.name}</a>: {shop.blurb}</li>
+        ))}
+      </ul>
+      <p>
+        Here on the site we share free patterns and stitching tips. If you stitch one of our designs, we would love to
+        see it. Leave a photo review on Etsy or tag us when you share it.
+      </p>
+    </div>
+  </article>
+  <section class="section"><div class="wrap"><Signup /></div></section>
+</Base>

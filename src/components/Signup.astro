@@ -1,0 +1,35 @@
+---
+import { NEWSLETTER, SHOPS, etsyLink } from '../site.config';
+
+interface Props {
+  title?: string;
+  text?: string;
+}
+
+const {
+  title = 'Get a free pattern every month',
+  text = 'Join our stitching letter: a new free pattern each month, early looks at new designs and subscriber-only discount codes for our Etsy shops.',
+} = Astro.props;
+---
+<section class="signup" id="signup">
+  <div>
+    <h2>{title}</h2>
+    <p>{text}</p>
+  </div>
+  <div>
+    {NEWSLETTER.action ? (
+      <form action={NEWSLETTER.action} method="post" target="_blank">
+        <label class="sr-only" for="signup-email">Email address</label>
+        <input id="signup-email" type="email" name={NEWSLETTER.field} placeholder="Your email address" required autocomplete="email" />
+        <button class="btn btn-primary" type="submit">Send me patterns</button>
+      </form>
+    ) : (
+      <a class="btn btn-primary" href={etsyLink(SHOPS.StitchBloomGarden.url)} target="_blank" rel="noopener">Follow the shop on Etsy</a>
+    )}
+    <p class="fineprint">No spam, unsubscribe any time.</p>
+  </div>
+</section>
+
+<style>
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+</style>

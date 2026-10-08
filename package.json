@@ -1,0 +1,20 @@
+{
+  "name": "stitchbloomgarden-site",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "import-listings": "node scripts/import-listings.mjs",
+    "build": "node scripts/import-listings.mjs && astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/rss": "4.0.19",
+    "@astrojs/sitemap": "3.7.4",
+    "astro": "5.18.2"
+  },
+  "engines": {
+    "node": ">=18.20.8"
+  }
+}

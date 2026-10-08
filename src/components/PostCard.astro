@@ -1,0 +1,21 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { formatDate } from '../utils';
+
+interface Props {
+  post: CollectionEntry<'blog'>;
+  fallbackImage?: string;
+}
+
+const { post, fallbackImage } = Astro.props;
+const image = post.data.image ?? fallbackImage;
+---
+<a class="card card-wide" href={`/blog/${post.id}/`}>
+  {image && <img src={image} alt="" loading="lazy" width="600" height="450" />}
+  <div class="card-body">
+    <span class="card-meta">{formatDate(post.data.date)}</span>
+    <span class="card-title">{post.data.title}</span>
+    <span class="card-meta">{post.data.description}</span>
+    <span class="card-cta">Read more →</span>
+  </div>
+</a>
