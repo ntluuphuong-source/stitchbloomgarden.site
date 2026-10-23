@@ -185,3 +185,6 @@ p { margin: 0 0 1em; }
   .card-body { padding: 10px 12px 12px; }
   .card-title { font-size: 0.95rem; }
 }
+
+/* Pattern photos linked inside blog posts */
+.prose a > img { max-width: 420px; width: 100%; box-shadow: var(--shadow); }
