@@ -14,7 +14,7 @@ patterns:
   - "4408515104"
   - "4575570995"
   - "4579703253"
-draft: true
+draft: false
 ---
 Christmas is about nine weeks away, and that is exactly the right time to pick a holiday pattern. A small ornament takes an evening or two, but a framed piece you want to give as a gift usually needs three to six weeks of relaxed stitching. Start now and you will be finishing with a cup of cocoa, not stitching in a panic on Christmas Eve.
 
