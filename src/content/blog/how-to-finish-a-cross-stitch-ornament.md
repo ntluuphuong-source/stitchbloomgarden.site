@@ -1,11 +1,16 @@
 ---
 title: "How to Finish a Cross Stitch Ornament: 3 Easy Ways"
-description: "Turn a small cross stitch into a Christmas ornament with felt backing, a mini hoop or a stuffed pillow finish. Step-by-step, no sewing machine needed."
+description: Turn a small cross stitch into a Christmas ornament with felt
+  backing, a mini hoop or a stuffed pillow finish. Step-by-step, no sewing
+  machine needed.
 date: 2026-10-22
-patterns: ["4587794157", "4579724096", "4584281363", "4575570995"]
-draft: true
+patterns:
+  - "4587794157"
+  - "4579724096"
+  - "4584281363"
+  - "4575570995"
+draft: false
 ---
-
 A finished ornament is one of the best gifts a stitcher can give: it is small, quick and gets brought out every single December. The stitching is the easy part. The finishing, turning a square of fabric into something you can hang on a tree, is where most people get stuck.
 
 Here are three ways to finish a cross stitch ornament, from easiest to most polished. None of them needs a sewing machine.
