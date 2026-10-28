@@ -1,11 +1,18 @@
 ---
 title: "Cross Stitch and Mental Health: What the Research Shows"
-description: "Does stitching really calm the mind? A plain-language look at the studies on needlecraft, creativity and stress, what they found and where the evidence is thin."
+description: Does stitching really calm the mind? A plain-language look at the
+  studies on needlecraft, creativity and stress, what they found and where the
+  evidence is thin.
 date: 2026-10-30
-patterns: ["4452769478", "4559299574", "4555165800", "4589475964", "4547815481", "4563013305"]
-draft: true
+patterns:
+  - "4452769478"
+  - "4559299574"
+  - "4555165800"
+  - "4589475964"
+  - "4547815481"
+  - "4563013305"
+draft: false
 ---
-
 Search for "cross stitch and mental health" and you will find hundreds of articles saying stitching lowers stress, boosts happiness and even changes your brain chemistry. Many of them name no study at all. We went looking for the actual research. Here is what it says, and what it does not.
 
 The short version: **the research is encouraging, but it is mostly about related crafts and mostly based on what people report about themselves.** Almost none of it is about cross stitch alone, and none of it shows that stitching treats a mental health condition.
@@ -27,7 +34,7 @@ A discussion of the review on the [Creative Restoration journal club](https://cr
 
 ## A survey of more than 3,500 knitters
 
-One of the best-known pieces of research is a survey of knitters by Riley, Corkhill and Morris, published in 2013 in the [*British Journal of Occupational Therapy*](https://orca.cardiff.ac.uk/id/eprint/43874/). More than 3,500 people responded. A researcher on the project described the main finding in an [interview with The Naked Scientists](https://www.thenakedscientists.com/node/199151): the more often people knit, the calmer and happier they said they felt.
+One of the best-known pieces of research is a survey of knitters by Riley, Corkhill and Morris, published in 2013 in the *[British Journal of Occupational Therapy](https://orca.cardiff.ac.uk/id/eprint/43874/)*. More than 3,500 people responded. A researcher on the project described the main finding in an [interview with The Naked Scientists](https://www.thenakedscientists.com/node/199151): the more often people knit, the calmer and happier they said they felt.
 
 The same interview raises the obvious caveats. It was a self-report survey of people who already knit, with no comparison group, and it was run through the network of an organization that promotes knitting. It cannot tell us whether knitting made people calmer or whether calmer people knit more often.
 
@@ -78,3 +85,4 @@ Stitching can be a lovely part of looking after yourself, but it is not a replac
 - Drexel University, [At Any Skill Level, Making Art Reduces Stress Hormones](https://drexel.edu/news/archive/2016/June/Art_Hormone_Levels_Lower), on Kaimal, Ray and Muniz, 2016, *Art Therapy*.
 - Conner, DeYoung and Silvia, 2018, [Everyday creative activity as a path to flourishing](https://experts.umn.edu/en/publications/everyday-creative-activity-as-a-path-to-flourishing/), *Journal of Positive Psychology*, 13(2), 181-189.
 - Goyal et al., 2014, meditation programs and psychological stress and well-being, [JAMA Internal Medicine](https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/1809754).
+
