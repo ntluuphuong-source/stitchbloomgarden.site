@@ -1,11 +1,18 @@
 ---
-title: "Does Cross Stitch Help You Focus? What the Science Says"
-description: "Cross stitch can put you in flow, a state of deep focus. Here is what research says about stitching, attention and screen time, and what it does not show yet."
+title: Does Cross Stitch Help You Focus? What the Science Says
+description: Cross stitch can put you in flow, a state of deep focus. Here is
+  what research says about stitching, attention and screen time, and what it
+  does not show yet.
 date: 2026-10-28
-patterns: ["4452332621", "4452769478", "4507208940", "4553908013", "4488842677", "4557483906"]
-draft: true
+patterns:
+  - "4452332621"
+  - "4452769478"
+  - "4507208940"
+  - "4553908013"
+  - "4488842677"
+  - "4557483906"
+draft: false
 ---
-
 Many stitchers will tell you that an evening with a needle and a chart leaves their mind quieter and clearer. It is a lovely claim, and part of it has good science behind it. Another part is still a guess. This article separates the two, then gives you practical ways to get the most focus out of your stitching time.
 
 ## What "flow" is, and why stitching fits it
@@ -66,3 +73,4 @@ Cross stitch matches the conditions that researchers say produce flow, and many 
 - Stitchlinks, [research on knitting and memory](https://stitchlinks.com/research1.html), pilot studies at Cardiff University.
 - Goyal et al., 2014, meditation programs and psychological stress and well-being, [JAMA Internal Medicine](https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/1809754).
 - CNBC, [Cutting back on social media reduces loneliness and depression, study finds](https://www.cnbc.com/2018/11/12/cutting-back-on-social-media-reduces-loneliness-depression-study-finds.html), on a 2018 University of Pennsylvania study.
+
