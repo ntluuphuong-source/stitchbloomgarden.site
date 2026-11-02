@@ -1,11 +1,17 @@
 ---
-title: "Funny Christmas Cross Stitch Patterns for Sassy Stitchers"
-description: "Not every home wants a sweet Santa. Here are six funny, snarky and slightly spooky Christmas cross stitch patterns, plus ideas for who to give them to."
+title: Funny Christmas Cross Stitch Patterns for Sassy Stitchers
+description: Not every home wants a sweet Santa. Here are six funny, snarky and
+  slightly spooky Christmas cross stitch patterns, plus ideas for who to give
+  them to.
 date: 2026-11-02
-patterns: ["4402721299", "4578498660", "4575570995", "4589068294", "4549550077"]
+patterns:
+  - "4402721299"
+  - "4578498660"
+  - "4575570995"
+  - "4589068294"
+  - "4549550077"
 draft: false
 ---
-
 Some people hang a perfect felt angel on the tree. Others want a tired little pun in a hoop on the wall. If you are the second kind of stitcher (or you are stitching a gift for one), this list is for you.
 
 Christmas is about seven weeks away, so there is time to stitch one or two of these and still wrap them. Every pattern below is an instant PDF download with a color chart, a symbol chart and a DMC thread list. If you want the classic and cozy side of the season too, see our [15 Christmas cross stitch patterns to start now](/blog/christmas-cross-stitch-patterns/).
@@ -14,37 +20,37 @@ Christmas is about seven weeks away, so there is time to stitch one or two of th
 
 ### 1. Jingle Some of the Way, I'm Tired
 
-[![Jingle Some of the Way, I'm Tired cross stitch pattern](https://i.etsystatic.com/54635272/r/il/d22e1a/7382306334/il_570xN.7382306334_myh7.jpg)](https://www.etsy.com/listing/4402721299?utm_source=stitchbloomgarden.site&utm_medium=referral&utm_campaign=blog)
+![Jingle Some of the Way, I'm Tired cross stitch pattern](https://i.etsystatic.com/54635272/r/il/d22e1a/7382306334/il_570xN.7382306334_myh7.jpg)
 
 The honest version of the carol, for anyone who is running on cocoa and fumes by the 20th. It works well as a small framed piece on a kitchen shelf. [See the Jingle Some of the Way, I'm Tired pattern on Etsy](https://www.etsy.com/listing/4402721299?utm_source=stitchbloomgarden.site&utm_medium=referral&utm_campaign=blog).
 
 ### 2. Christmas Loading
 
-[![Christmas Loading cross stitch pattern](https://i.etsystatic.com/54635272/r/il/25babd/8595231653/il_570xN.8595231653_sqg9.jpg)](https://www.etsy.com/listing/4578498660?utm_source=stitchbloomgarden.site&utm_medium=referral&utm_campaign=blog)
+![Christmas Loading cross stitch pattern](https://i.etsystatic.com/54635272/r/il/25babd/8595231653/il_570xN.8595231653_sqg9.jpg)
 
 A holiday progress bar that is nearly full. The shapes are simple, so it is a good pick if you are newer to stitching or you want something quick. [See the Christmas Loading pattern on Etsy](https://www.etsy.com/listing/4578498660?utm_source=stitchbloomgarden.site&utm_medium=referral&utm_campaign=blog).
 
 ### 3. Mistle Toad
 
-[![Mistle Toad cross stitch pattern](https://i.etsystatic.com/38601058/r/il/b9ee09/8573519107/il_570xN.8573519107_f6vu.jpg)](https://www.etsy.com/listing/4575570995?utm_source=stitchbloomgarden.site&utm_medium=referral&utm_campaign=blog)
+![Mistle Toad cross stitch pattern](https://i.etsystatic.com/38601058/r/il/b9ee09/8573519107/il_570xN.8573519107_f6vu.jpg)
 
 A frog in mistletoe, because a good pun is part of the holiday spirit. It is small, silly and easy to turn into an ornament. [See the Mistle Toad pattern on Etsy](https://www.etsy.com/listing/4575570995?utm_source=stitchbloomgarden.site&utm_medium=referral&utm_campaign=blog).
 
 ### 4. Sorry Santa, I've Been Feral
 
-[![Sorry Santa, I've Been Feral cross stitch pattern](https://i.etsystatic.com/38601058/r/il/5373a0/8627719830/il_570xN.8627719830_4om2.jpg)](https://www.etsy.com/listing/4589068294?utm_source=stitchbloomgarden.site&utm_medium=referral&utm_campaign=blog)
+![Sorry Santa, I've Been Feral cross stitch pattern](https://i.etsystatic.com/38601058/r/il/5373a0/8627719830/il_570xN.8627719830_4om2.jpg)
 
 A raccoon who knows exactly which list they are on. A natural gift for the friend who does not pretend to be on the nice one. [See the Sorry Santa, I've Been Feral pattern on Etsy](https://www.etsy.com/listing/4589068294?utm_source=stitchbloomgarden.site&utm_medium=referral&utm_campaign=blog).
 
 ### 5. Santa Ghost
 
-[![Santa Ghost cross stitch pattern](https://i.etsystatic.com/54635272/r/il/e6458d/8336869710/il_570xN.8336869710_oa5u.jpg)](https://www.etsy.com/listing/4549550077?utm_source=stitchbloomgarden.site&utm_medium=referral&utm_campaign=blog)
+![Santa Ghost cross stitch pattern](https://i.etsystatic.com/54635272/r/il/e6458d/8336869710/il_570xN.8336869710_oa5u.jpg)
 
 A ghost in a Santa hat for the person whose spooky decorations never quite come down. Creepmas is a real lifestyle, and this is its pattern. [See the Santa Ghost pattern on Etsy](https://www.etsy.com/listing/4549550077?utm_source=stitchbloomgarden.site&utm_medium=referral&utm_campaign=blog).
 
 ### 6. Christmas Cat
 
-[![Christmas Cat cross stitch pattern](https://i.etsystatic.com/38601058/r/il/ecd88e/8604428127/il_570xN.8604428127_k5sa.jpg)](https://www.etsy.com/listing/4579703253?utm_source=stitchbloomgarden.site&utm_medium=referral&utm_campaign=blog)
+![Christmas Cat cross stitch pattern](https://i.etsystatic.com/38601058/r/il/ecd88e/8604428127/il_570xN.8604428127_k5sa.jpg)
 
 Not a joke exactly, but a cat sitting by a winter pine tree is funny to anyone who has had a cat "help" with the tree. Cozy and quick to read on the chart. [See the Christmas Cat pattern on Etsy](https://www.etsy.com/listing/4579703253?utm_source=stitchbloomgarden.site&utm_medium=referral&utm_campaign=blog).
 
