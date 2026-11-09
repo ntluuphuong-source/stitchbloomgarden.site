@@ -74,6 +74,20 @@ A warm scene for a living room or reading corner. [See the Cozy Orange Cat Livin
 A reading cat for bookworms, and a good match for a bookshelf. [See the Black Cat Reading pattern on Etsy](https://www.etsy.com/listing/4444108064?utm_source=stitchbloomgarden.site&utm_medium=referral&utm_campaign=blog).
 
 
+## How to choose the right cat pattern
+
+**Think about where it will hang.** A quote piece suits an office or hallway, a laundry or bathroom joke suits a utility room, and a cozy scene belongs in the living room or beside a bookshelf. Picking the spot first narrows the choice quickly.
+
+**Think about the person.** For yourself, go with the one that made you laugh first. For a gift, match the mood to the person: sassy for the introvert, cozy for the reader, silly for the friend who sends cat memes.
+
+**Think about your time.** Larger designs with many colors take longer, while a small cat with a short quote can be finished in a few sessions. If you are working to a date, use the steps in our time calculator post to plan backwards.
+
+**Think about finishing.** A cat piece looks great in a plain frame, in a hoop, or sewn into a small pillow or tote. Decide before you start, because the finished size affects how much fabric you need.
+
+## Why cat designs work so well in cross stitch
+
+Cross stitch is made of small squares, which suits the simple shapes of cats: pointed ears, round eyes, a curved tail. Humor helps too. A pattern that makes you smile keeps you stitching, and a finished piece with a joke on it tends to start a conversation. Many of our cat designs also pair a funny phrase with a very simple picture, so they are approachable even if you have only a few projects behind you.
+
 ## Tips for stitching cats
 
 **Choose the right fabric color.** Black cats show up best on light fabric such as white or cream Aida. If you prefer a dark background, check the pattern notes first. Our [Aida count guide](/blog/aida-count-finished-size/) helps you work out the finished size.
